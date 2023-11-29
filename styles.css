@@ -1,0 +1,233 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background-color: #dcf28a; */
+    background-image: url('images/background.png');
+}
+
+@font-face {
+    font-family: Anakotmai-Light;
+    src: url('font/anakotmai-light.woff') format('woff');
+    src: url('font/anakotmai-light.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Anakotmai-Bold;
+    src: url('font/anakotmai-bold.woff') format('woff');
+    src: url('font/anakotmai-bold.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: Anakotmai-Medium;
+    src: url('font/anakotmai-medium.woff') format('woff');
+    src: url('font/anakotmai-medium.woff2') format('woff2');
+}
+
+body {
+    font-family: 'Anakotmai-Bold';
+}
+
+.navbar-head {
+    font-family: 'Anakotmai-Bold';
+}
+
+.intro-bg {
+    width: 1920px;
+    height: 500px;
+    background-color: #ffffff;
+    opacity: 0.7;
+    transition: opacity 0.1s;
+}
+
+.padding {
+    padding: 100px;
+    /* Adds 10 pixels of padding within the element */
+}
+
+.navbar {
+    opacity: 0.75;
+    transition: opacity 0.5s;
+}
+
+.navbar:hover {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.pulse {
+    animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.95);
+    }
+}
+
+.scale-up {
+    transition: transform 1s;
+}
+
+.scale-up:hover {
+    transform: scale(1.1);
+}
+
+.btn-ci {
+    background-color: #9fc41a;
+    color: white;
+}
+
+.btn-ci:hover {
+    background-color: #7a970e;
+    color: white;
+}
+
+.logo {
+    scale: 1;
+}
+
+@media (max-width: 768px) {
+
+    /* Apply font for smaller screens */
+    body {
+        font-family: 'Anakotmai-Medium', sans-serif;
+    }
+}
+
+@media (min-width: 769px) {
+
+    /* Apply font for larger screens */
+    body {
+        font-family: 'Anakotmai-Medium', sans-serif;
+    }
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.card-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.policy-title {
+    font-family: 'Anakotmai-Bold', sans-serif;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.policy-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.policy-extra {
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.policy-sep {
+    font-size: 10px;
+    opacity: 0.5;
+    text-align: center;
+}
+
+.card-description {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+@keyframes card-fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in-card {
+    opacity: 0;
+    animation: card-fadeIn 1s ease-in-out forwards;
+}
+
+.credit {
+    position: relative;
+    bottom: -17px;
+    width: 100%;
+    background-color: #805824;
+    color: #ffffff;
+    text-align: center;
+    opacity: 1;
+}
+
+.footer-land {
+    position: relative;
+    bottom: -17px;
+    width: 100%;
+    text-align: center;
+}
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+  }
+
+.nongpukguard {
+    margin-top: 50px;
+    scale: 1;
+}
+/*
+.popover {
+    border: 10px rgb(0, 0, 0) !important;
+    max-width: 600px !important;
+  }
+  
+  .popover-body{
+    color: black !important;
+    font-size: 12px !important;
+    font-family: 'Anakotmai-Light';
+    max-width: 600px !important;
+      
+  }
+*/
