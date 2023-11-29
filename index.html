@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="Shortcut Icon" href="logo3.png" type="image/x-icon" />
+  <link rel="icon" href="logo.png">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/e667c72bcb.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>พรรคไวท์การ์ด | WhiteGuard</title>
+  <script>
+    function playSound() {
+      var audio = new Audio('sound/pakguardkhao.mp3');
+      audio.volume = 0.3;
+      audio.play();
+    }
+    /* $(function () {
+    $('[data-toggle="popover"]').popover()
+    }) */
+  </script>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-971TVBKSB5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-971TVBKSB5');
+</script>
+</head>
+
+<body>
+
+  <!-- ส่วนหัว Navbar -->
+  <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+    <div class="container">
+      <a class="my-2 navbar-brand navbar-head" href="#">พรรคไวท์การ์ด</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#" onclick="closeNavbar()">หน้าแรก <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#Policy" onclick="closeNavbar()">นโยบาย</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#Member" onclick="closeNavbar()">สมาชิกพรรค</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <a class="nav-link" style="color: black;" href="https://www.instagram.com/pakwhiteguard_"><i
+              class="fa-brands fa-instagram fa-xl"></i></a>
+          <a class="nav-link" style="color: black;" href="https://www.tiktok.com/@pakguardkhao"><i
+              class="fa-brands fa-tiktok fa-xl"></i></a>
+          <!-- <a class="nav-link" style="color: black;"><i class="fa-solid fa-moon fa-xl"></i></a> -->
+          <a class="btn btn-ci" href="https://forms.gle/rcpvXo5RNqYmGwKJ9" onclick="closeNavbar()">ส่งความคิดเห็น</a>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div style="margin-top: 100px;"></div>
+
+  <!-- ส่วนหน้าโลโก้ -->
+  <center><img src="logo3.png" id="Logo" class="logo fadeIn scale-up responsive-image" alt="GuardKao Party Logo"
+      onclick="playSound()">
+  </center>
+  <div style="margin-top: 30px;"></div>
+  <p style="font-size: 30px; text-align: center;">ยินดีต้อนรับสู่ พรรคไวท์การ์ด</p>
+
+  <div style="margin-top: 10px;"></div>
+
+  <!-- ส่วนหน้าเมนูเลือกเนื้อหา -->
+  <center><a class="btn btn-success" href="#Policy">ดูนโยบายพรรค</a><a class="btn btn-light"
+      href="#Member">ดูสมาชิคพรรค</a></center>
+
+  <div style="margin-top: 240px;"></div>
+
+  <div class="container">
+    <h1 id="Policy" class="alert alert-light" style="color: black;">
+      <center>นโยบายพรรคไวท์การ์ด</center>
+    </h1>
+  </div>
+
+  <!-- ส่วนนโยบายแบบจัดกลุ่ม -->
+  <center>
+    <div id="accordion">
+      <!-- การ์ดอีเวนต์ -->
+      <div class="card mb-3" style="max-width: 600px;">
+        <a data-toggle="collapse" data-target="#guardEvent" aria-expanded="true" aria-controls="guardEvent"><img
+            src="images/policy-topic/guardEvent.PNG" class="responsive-image"></a>
+      </div>
+      <div id="guardEvent" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordion">
+        <center>
+          <div class="card mb-3" style="max-width: 550px;">
+            <div class="row g-0">
+
+              <div class="col-md-12">
+                <div class="card-body">
+                  <h5 class="policy-title">จัดกิจกรรมแสดงความสามารถในทุกด้าน</h5>
+                  <a class="policy-text">จัดกิจกรรมแสดงความสามารถในทุกด้านได้แก่ ศิลปะ ดนตรี ภาษา กีฬา Computer งานฝีมือ ฯลฯ เราพยายามจะจัดให้ได้หลากหลายมากที่สุด เพราะความเก่งของเราไม่เหมือนกัน น้องๆเพื่อนๆคนไหนที่ร่วมกิจกรรมจะได้รับประสบการณ์การแข่งขันจริงๆ นอกจากนี้ยังทำให้มีรูปกิจกรรม, ผลงาน, เกียรติบัตรไว้ใช้สำหรับ Portfolio</a>
+                  <br><a class="policy-extra" style="color: red;">เพื่อนๆน้องๆที่ไม่ได้เรียนสายนั้นๆก็สามารถลงแข่งได้</a>
+                </div>
+              </div>
+
+              <a class="policy-sep card-body">. . . . . . . . . . . . . . . . . . . . . . . . . . . .</a>
+
+              <div class="col-md-12">
+                <div class="card-body">
+                  <h5 class="policy-title">E-sports</h5>
+                  <a class="policy-text">ส่งเสริมการจัดแข่งเกม E-sports เช่น Valorant , Minecraft , ROV ,ฯลฯ จัดโดยคนที่เล่นจริง เพื่อเพิ่มความสามัคคีและประสบการณ์ให้เกิดขึ้นในหมู่นักเรียน โดยการแข่งจะมีของรางวัลเพื่อเป็นแรงจูงใจในการแข่ง เช่น เงิน , ของ Limited ที่ทางพรรคจัดทำให้เองเป็นพิเศษ</a>
+                  <br><a class="policy-extra" style="color: red;">นอกจากนี้เรายังจะเพิ่มการแข่งขัน E-sports ลงในกีฬาสีอีกด้วย</a>
+                </div>
+              </div>
+
+              <a class="policy-sep card-body">. . . . . . . . . . . . . . . . . . . . . . . . . . . .</a>
+
+              <div class="col-md-12">
+                <div class="card-body">
+                  <h5 class="policy-title">ตลาดนัดนักเรียน</h5>
+                  <a class="policy-text">เมื่อมีกิจกรรมต่างๆ เช่น งานวันวิชาการ อนุญาติให้นักเรียน
+                    ตั้งซุ้มขายของกับเพื่อนๆได้ โดยสามารถนำของ Handmade , ขนม ,ฯลฯ มาขายได้ เพื่อให้นักเรียนได้ฝึกการบริหารจัดการเงินของ
+                    ตนเอง และสร้างความหลากหลายให้กับซุ้มกิจกรรม</a>
+                  <br><a class="policy-extra" style="color: red;">เพื่อป้องกันไม่ให้ซุ้มหลักของกิจกรรมถูกลดความสำคัญลง เราจึงมีการกำหนดอัตราส่วนของจำนวนซุ้มตลาดนัดให้เหมาะสมกับจำนวนซุ้มหลักของกิจกรรม</a>
+                </div>
+              </div>
+
+              <a class="policy-sep card-body">. . . . . . . . . . . . . . . . . . . . . . . . . . . .</a>
+
+              <div class="col-md-12">
+                <div class="card-body">
+                  <h5 class="policy-title">ตลาดออนไลน์</h5>
+                  <a class="policy-text">ทางพรรคจะมี Facebook ไว้สำหรับให้เพื่อนๆน้องๆได้ซื้อขาย
+                    ของผ่านทางออนไลน์ โดยนักเรียนสามารถโพสต์สิ่งที่อยากขายได้ และติดต่อขอซื้อได้เช่นกัน นักเรียนยังสามารถใช้ช่องทางนี้ในการโพสต์ข้อมูลสินค้าก่อนวางขายจริงในตลาดนัดนักเรียน</a>
+                </div>
+              </div>
+
+              <a class="policy-sep card-body">. . . . . . . . . . . . . . . . . . . . . . . . . . . .</a>
+
+              <div class="col-md-12">
+                <div class="card-body">
+                  <h5 class="policy-title">จิตอาสา</h5>
+                  <a class="policy-text">สนับสนุนให้นักเรียนได้ทำจิตอาสานอกสถานที่ เช่น 
+                    ปลูกป่า , เข้าร่วมค่ายธรรมะ เพื่อฝึกให้นักเรียนรู้จัก
+                    ความเสียสละและความอดทน ทั้งยังเป็นการส่งเสริมให้
+                    นักเรียนมีผลงานและเกียรติบัตรสำหรับใช้ใน portfolio</a>
+                </div>
+              </div>
+
+              <a class="policy-sep card-body">. . . . . . . . . . . . . . . . . . . . . . . . . . . .</a>
+
+              <div class="col-md-12">
+                <div class="card-body">
+                  <h5 class="policy-title">การปฐมพยาบาลเบื้องต้น</h5>
+                  <a class="policy-text">สนับสนุนให้มีการอบรมและสอนเรื่องการปฐมพยาบาลเบื้องต้น เช่น การทำ CPR ประมาณ 1 ครั้ง / 2 เทอม ให้กับนักเรียนม.ปลายทุกระดับชั้น เพื่อให้นักเรียนทราบถึงวิธีการปฏิบัติเบื้องต้นและนำไปใช้ในสถานการณ์จริงได้อย่างถูกต้อง</a>
+                </div>
+              </div>
+
+              <a class="policy-sep card-body">. . . . . . . . . . . . . . . . . . . . . . . . . . . .</a>
+
+              <div class="col-md-12">
+                <div class="card-body">
+                  <h5 class="policy-title">จัด Art Gallery</h5>
+                  <a class="policy-text">จัดห้องไว้สำหรับเก็บรวบรวมผลงานศิลปะต่างๆของนักเรียน ทั้งที่มาจากการแข่งขันภายในโรงเรียนและภายนอกโรงเรียน เพื่อ
+                    ส่งเสริมให้นักเรียนเกิดแรงจูงใจในการแสดงศักยภาพของตนเอง และทำให้นักเรียนเกิดความภาคภูมิใจที่ได้เป็นบุคลากรของสถาบัน</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </center>
+      </div>
+
+      <!-- การ์ดข่าวสาร -->
+      <div class="card mb-3" style="max-width: 600px;">
+        <a data-toggle="collapse" data-target="#guardNews" aria-expanded="true" aria-controls="guardNews"><img
+            src="images/policy-topic/guardNews.png" class="responsive-image"></a>
+      </div>
+      <div id="guardNews" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordion">
+        <center>
+          <div class="card mb-3" style="max-width: 550px;">
+            <div class="row g-0">
+
+              <div class="col-md-12">
+                <div class="card-body">
+                  <h5 class="policy-title">Line Official , IG , Website</h5>
+                  <a class="policy-text">ทางพรรคเราจะใช้ Line Official , IG , Website ในการประกาศข้อมูลข่าวสารต่างๆ เช่น กิจกรรมภายในโรงเรียน ให้กับนักเรียน โดยใน Line Official จะแจ้งเป็นข้อความอัตโนมัติ  นอกจากนี้ในช่องทางทั้ง 3 ที่เรากล่าวมายังเปิดรับฟังปัญหาทุกเรื่องไม่ว่าจะเป็นเรื่องภายนอกโรงเรียนหรือภายในโรงเรียน เเต่ในกรณีที่ไม่อยากเปิดเผยตัวตน ทางเราจะมีลิงก์ NGL ให้ โดยไม่นำมาเปิดเผยให้ใคร </a>
+                </div>
+              </div>
+
+              <a class="policy-sep card-body">. . . . . . . . . . . . . . . . . . . . . . . . . . . .</a>
+
+              <div class="col-md-12">
+                <div class="card-body">
+                  <h5 class="policy-title">เสียงตามสาย </h5>
+                  <a class="policy-text">ก่อน Reading time ประมาณ 7.00 น. ของทุกวัน เราจะเปิดเพลงที่น้องๆเพื่อนๆส่งมาผ่านทาง Line Official , IG และในช่วง 7.00 - 7.20 น. ทางเราจะแจ้งข่าวสารเกี่ยวกับกิจกรรมต่างๆ (หากมี) ผ่านทางเสียงตามสาย</a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </center>
+      </div>
+
+      <!-- การ์ดซัพพอร์ท -->
+      <div class="card mb-3" style="max-width: 600px;">
+        <a data-toggle="collapse" data-target="#guardSupport" aria-expanded="true" aria-controls="guardSupport"><img
+            src="images/policy-topic/guardSupport.png" class="responsive-image"></a>
+      </div>
+      <div id="guardSupport" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordion">
+        <center>
+          <div class="card mb-3" style="max-width: 550px;">
+            <div class="row g-0">
+
+              <div class="col-md-12">
+                <div class="card-body">
+                  <h5 class="policy-title">No bully</h5>
+                  <a class="policy-text">ไม่สนับสนุนการแสดงพฤติกรรมรุนแรงหรือความเกลียดชังต่อผู้อื่นทั้งในชีวิตจริงและสื่อออนไลน์ เพราะอาจส่งผลต่อสภาพจิตใจ ทำให้เกิดบาดแผลทางจิตใจจนเกิดผลกระทบตามมามากมาย เช่น โรคทางจิต หากพรรคเราพบเห็นการกระทำที่เป็นการ bully หรือได้รับการแจ้งปัญหาเกี่ยวกับการ bully เราจะมีการกล่าวตักเตือนบุคคลเหล่านั้นโดยทันที</a>
+                </div>
+              </div>
+
+              <a class="policy-sep card-body">. . . . . . . . . . . . . . . . . . . . . . . . . . . .</a>
+
+              <div class="col-md-12">
+                <div class="card-body">
+                  <h5 class="policy-title">อิสระการแต่งกาย</h5>
+                  <a class="policy-text">ในช่วงเวลาที่มีกิจกรรมต่างๆหรืองานเทศกาล เช่น วันวิชาการ , ตรุษจีน , ฮาโลวีน สามารถให้นักเรียนแต่งกายได้อย่างอิสระโดยต้องมีความเหมาะสม (แต่งคอสเพลย์ได้) เพื่อให้บรรยากาศในงานมีสีสัน และทำให้นักเรียนมีความสุขในการเข้าร่วมกิจกรรมมากขึ้น</a>
+                </div>
+              </div>
+
+              <a class="policy-sep card-body">. . . . . . . . . . . . . . . . . . . . . . . . . . . .</a>
+
+              <div class="col-md-12">
+                <div class="card-body">
+                  <h5 class="policy-title">สนับสนุนเรื่องความเท่าเทียมทางเพศ</h5>
+                  <a class="policy-text">ให้นักเรียนได้มีโอกาสแสดงความเป็นตัวเองมากขึ้น ไม่ว่าจะเป็นทางกิจกรรมแสดงความสามารถต่างๆ หรือ การแต่งกายในกิจกรรมต่างๆ ก็สามารถให้ผู้ชายแต่งเป็นผู้หญิงหรือผู้หญิงแต่งเป็นผู้ชายได้ อย่างอิสระ ไม่มีการแบ่งแยก และไม่สนับสนุนให้มีการเหยียดกัน </a>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </center>
+      </div>
+
+      <!-- การ์ดเทคแคร์ -->
+      <div class="card mb-3" style="max-width: 600px;">
+        <a data-toggle="collapse" data-target="#guardTakecare" aria-expanded="true" aria-controls="guardTakecare"><img
+            src="images/policy-topic/guardTakecare.png" class="responsive-image"></a>
+      </div>
+      <div id="guardTakecare" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordion">
+        <center>
+          <div class="card mb-3" style="max-width: 550px;">
+            <div class="row g-0">
+
+              <div class="col-md-12">
+                <div class="card-body">
+                  <h5 class="policy-title">Reading Time</h5>
+                  <a class="policy-text">ปรับเปลี่ยนกิจกรรมใน Reading Time ให้เป็นเวลาสำหรับการ
+                    เตรียมตัวของนักเรียนก่อนเข้าเรียนคาบแรก ได้อ่านหนังสือหรือทำกิจธุระส่วนตัว นอกจากนี้ยังทำให้ครูได้เตรียมตัวสำหรับการสอนคาบแรก ไม่ต้องเข้าเวรเหมือนแต่ก่อน</a>
+                </div>
+              </div>
+
+              <a class="policy-sep card-body">. . . . . . . . . . . . . . . . . . . . . . . . . . . .</a>
+
+              <div class="col-md-12">
+                <div class="card-body">
+                  <h5 class="policy-title">กล่องแสดงความคิดเห็น</h5>
+                  <a class="policy-text">มีกล่องแสดงความคิดเห็นในจุดสำคัญๆของตึก เพื่อเพิ่มช่องทาง
+                    ให้กับนักเรียนในการแสดงความคิดเห็น หรือแจ้งปัญหาเรื่องต่างๆ
+                    นอกเหนือจากช่องทาง Line Official , IG , Website </a>
+                </div>
+              </div>
+
+              <a class="policy-sep card-body">. . . . . . . . . . . . . . . . . . . . . . . . . . . .</a>
+
+              <div class="col-md-12">
+                <div class="card-body">
+                  <h5 class="policy-title">เบิกผ้าอนามัยผ่านห้องพยาบาล ฟรี</h5>
+                  <a class="policy-text">ในกรณีฉุกเฉินที่นักเรียนไม่มีผ้าอนามัย นักเรียนสามารถเบิก
+                    ผ้าอนามัยได้กับครูในห้องพยาบาล โดยจะมีการบันทึกการเบิก
+                    ผ้าอนามัยของนักเรียนเพื่อป้องกันไม่ให้เกิดการเบิกมากไปจนเกินความจำเป็น และทำให้ไม่เพียงพอต่อนักเรียนที่มีความจำเป็นต้องใช้</a>
+                </div>
+              </div>
+
+              <a class="policy-sep card-body">. . . . . . . . . . . . . . . . . . . . . . . . . . . .</a>
+
+              <div class="col-md-12">
+                <div class="card-body">
+                  <h5 class="policy-title">นัดพี่แนะน้อง</h5>
+                  <a class="policy-text">จะมีการให้ตัวแทนกลุ่มของรุ่นพี่ในแต่ละสายจัดทำซุ้ม Workshop เกี่ยวกับสายการเรียนของตัวเอง เพื่อแนะแนวแนวทางให้รุ่นน้องได้เลือกสายการเรียนที่ตอบโจทย์ตัวเองจริงๆ</a>
+                </div>
+              </div>
+          
+            </div>
+          </div>
+        </center>
+      </div>
+
+      <!-- การ์ดสภาพแวดล้อม -->
+      <div class="card mb-3" style="max-width: 600px;">
+        <a data-toggle="collapse" data-target="#guardEnvironment" aria-expanded="true"
+          aria-controls="guardEnvironment"><img src="images/policy-topic/guardEnvironment.png"
+            class="responsive-image"></a>
+      </div>
+      <div id="guardEnvironment" class="collapse hide" aria-labelledby="headingOne" data-parent="#accordion">
+        <center>
+          <div class="card mb-3" style="max-width: 550px;">
+            <div class="row g-0">
+
+              <div class="col-md-12">
+                <div class="card-body">
+                  <h5 class="policy-title">ห้องน้ำน่าเข้า</h5>
+                  <a class="policy-text">ทุกคนไม่ว่าครูหรือนักเรียนอาจจะเคยประสบปัญหาจากการเข้าห้องน้ำ เช่น เรื่องกลิ่น , ไม่มีกระดาษทิชชู่ , ห้องน้ำไม่สะอาด ทางพรรคเราจึงเสนอให้มีการเพิ่มถุงหอมในห้องน้ำ และนำทิชชู่ไปวางไว้ในห้องน้ำทุกห้อง เพื่อป้องกันการแพร่กระจายของเชื้อโรค และทำให้ห้องน้ำในโรงเรียนถูกสุขอนามัย</a>
+                </div>
+              </div>
+
+              <a class="policy-sep card-body">. . . . . . . . . . . . . . . . . . . . . . . . . . . .</a>
+
+              <div class="col-md-12">
+                <div class="card-body">
+                  <h5 class="policy-title">เพิ่มถังขยะภายในโรงเรียน</h5>
+                  <a class="policy-text">เพิ่มถังขยะในจุดต่างๆของโรงเรียนที่มีนักเรียนอยู่มาก หรือมีคน
+                    เดินทางผ่านมาก เพื่อลดปัญหาการทิ้งขยะไม่เป็นที่ ทำให้
+                    สภาพแวดล้อมของโรงเรียนดีมากขึ้น</a>
+                </div>
+              </div>
+              
+            
+          </div>
+        </center>
+      </div>
+    </div>
+  </center>
+
+  
+
+
+  <div style="margin-top: 400px;"></div>
+
+  <!-- ส่วนของสมาชิคพรรค -->
+  <div class="container" id="Member">
+    <h1 class="alert alert-light" style="color: black;">
+      <center>สมาชิกพรรคไวท์การ์ด</center>
+    </h1>
+    <div style="margin-top: 50px;"></div>
+    <center>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card fade-in-card">
+            <img src="images/member/four.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">ณัฐดนัย ใจสุวรรณเมธิน (โฟร์)</h5>
+              <p class="card-text">ประธานพรรคไวท์การ์ด</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card fade-in-card">
+            <img src="images/member/kaotung.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">รัฏฐภรณ์ เชื่อมสุข (ข้าวตัง)</h5>
+              <p class="card-text">รองประธานพรรคไวท์การ์ด</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card fade-in-card">
+            <img src="images/member/korn.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">กรกฤต สงวนงาม (กร)</h5>
+              <p class="card-text">รองประธานพรรคไวท์การ์ด</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card fade-in-card">
+            <img src="images/member/beam.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">ธัญญารัตน์ ชุ้มสูงเนิน (บีม)</h5>
+              <p class="card-text">เลขานุการพรรคไวท์การ์ด</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card fade-in-card">
+            <img src="images/member/field.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">ปริยาภรณ์ อินทะรัง (ฟิว)</h5>
+              <p class="card-text">สมาชิกพรรคไวท์การ์ด</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card fade-in-card">
+            <img src="images/member/eart.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">ประดิพัทธ์ ทับทองดี (เอิร์ธ)</h5>
+              <p class="card-text">สมาชิกพรรคไวท์การ์ด</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card fade-in-card">
+            <img src="images/member/prame.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">พุฒิพงศ์ ศรีทองหลาง (เปรม)</h5>
+              <p class="card-text">สมาชิกพรรคไวท์การ์ด</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card fade-in-card">
+            <img src="images/member/tan.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">ตรัยบดินทร นุชน้อย (แทน)</h5>
+              <p class="card-text">สมาชิกพรรคไวท์การ์ด</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card fade-in-card">
+            <img src="images/member/peach.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">พิชชากร พุฒทอง (พีช)</h5>
+              <p class="card-text">สมาชิกพรรคไวท์การ์ด</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card fade-in-card">
+            <img src="images/member/praw.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">อิสรียา ถาวรนาน (แพรว)</h5>
+              <p class="card-text">สมาชิกพรรคไวท์การ์ด</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card fade-in-card">
+            <img src="images/member/abu.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">โสภณ ณรงค์ศักดิ์ชัย (อาบู)</h5>
+              <p class="card-text">สมาชิกพรรคไวท์การ์ด</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card fade-in-card">
+            <img src="images/member/pink.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">วรรณสา สันเสนาะ (พิ้ง)</h5>
+              <p class="card-text">สมาชิกพรรคไวท์การ์ด</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card fade-in-card">
+            <img src="images/member/rung.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">กนกพร ครุฑธรรม (รุ่ง)</h5>
+              <p class="card-text">สมาชิกพรรคไวท์การ์ด</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card fade-in-card">
+            <img src="images/member/ney.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">นัฐสิกานต์ ฤกษ์ใหม่ (เน)</h5>
+              <p class="card-text">สมาชิกพรรคไวท์การ์ด</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card fade-in-card">
+            <img src="images/member/pin.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">ลภัสรดา บุญส่ง (ปิ่น)</h5>
+              <p class="card-text">สมาชิกพรรคไวท์การ์ด</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card fade-in-card">
+            <img src="images/member/mel.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">บัวภูพาน อัครบุณยสิทธิ์ (เมล)</h5>
+              <p class="card-text">สมาชิกพรรคไวท์การ์ด</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card fade-in-card">
+            <img src="images/member/mi.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">ทิพามณี ลำพุทธา (มิ)</h5>
+              <p class="card-text">สมาชิกพรรคไวท์การ์ด</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card fade-in-card">
+            <img src="images/member/mei.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">ภัควลัญชญ์ กลิ่นจันทร์ (ตังเม)</h5>
+              <p class="card-text">สมาชิกพรรคไวท์การ์ด</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card fade-in-card">
+            <img src="images/member/bam.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">จันทภา ศรีอาจชัย (แบม)</h5>
+              <p class="card-text">สมาชิกพรรคไวท์การ์ด</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card fade-in-card">
+            <img src="images/member/jame.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">เศรษฐวัฒน์ พันธ์สุข (เจมส์)</h5>
+              <p class="card-text">สมาชิกพรรคไวท์การ์ด</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </center>
+  </div>
+  <script>
+    function closeNavbar() {
+      const navbarToggler = document.querySelector('.navbar-toggler');
+      if (navbarToggler.classList.contains('collapsed')) {
+        // Navbar is already collapsed, do nothing
+        return;
+      }
+
+      // Click the navbar toggler button to collapse the navbar
+      navbarToggler.click();
+    }
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+</body>
+<footer>
+  <center>
+    <a href="https://line.me/S/sticker/23288828">
+      <image class="responsive-image nongpukguard" src="nongpukguard.png"></image>
+    </a>
+  </center>
+  <image class="footer-land" src="images/footer.PNG"></image>
+  <div class="credit">
+    <p>Official website for พรรคไวท์การ์ด (พรรคการ์ดขาว) © <a style="color: white;"
+        href="https://www.instagram.com/pradipat_eart/">Pradipat</a></p>
+  </div>
+</footer>
+
+</html>
