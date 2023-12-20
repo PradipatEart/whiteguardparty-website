@@ -8,4 +8,4 @@ This project was made to be a school project for promoting student council party
 ## Project Introducing Video:
 This video is for Kasetsart University application purpses only.
 
-[![WHITEGUARD](https://img.youtube.com/vi/Ps4wdREnl7w/0.jpg)](https://www.youtube.com/watch?v=Ps4wdREnl7w)
+[![WHITEGUARD](https://img.youtube.com/vi/9towJqkIn0g/0.jpg)](https://www.youtube.com/watch?v=9towJqkIn0g)
